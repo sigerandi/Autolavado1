@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.autolavado.controlador.CitaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="183.0" layoutY="34.0" prefHeight="48.0" prefWidth="235.0" text="Citas">
+         <font>
+            <Font name="Arial Bold" size="33.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="90.0" prefHeight="307.0" prefWidth="575.0">
+         <children>
+            <HBox prefHeight="72.0" prefWidth="575.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="220.0" text="Modelo:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtModelo" prefHeight="25.0" prefWidth="337.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="575.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="220.0" text="Placas:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPlacas" prefHeight="25.0" prefWidth="337.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="78.0" prefWidth="575.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="220.0" text="Tipo:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <ChoiceBox fx:id="chcTipo" prefHeight="25.0" prefWidth="243.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="164.0" prefHeight="78.0" prefWidth="575.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="220.0" text="Servicio:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <CheckBox fx:id="chkLavado" mnemonicParsing="false">
+                     <graphic>
+                        <Label prefHeight="25.0" prefWidth="85.0" text="Lavado">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </CheckBox>
+                  <CheckBox fx:id="chkCera" mnemonicParsing="false">
+                     <graphic>
+                        <Label prefHeight="25.0" prefWidth="58.0" text="Cera">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </CheckBox>
+                  <CheckBox fx:id="chkInteriores" mnemonicParsing="false">
+                     <graphic>
+                        <Label prefHeight="25.0" prefWidth="94.0" text="Interiores">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="210.0" prefHeight="64.0" prefWidth="575.0" spacing="100.0">
+               <children>
+                  <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#nuevaCita" text="Aceptar" />
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelarCita" text="Cancelar" />
+               </children>
+               <padding>
+                  <Insets left="180.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
